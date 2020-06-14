@@ -66,7 +66,7 @@ resource "aws_instance" "webserver" {
 	connection {
 		type     = "ssh"
     	user     = "ec2-user"
-    	private_key = file("D:/AWS Node Server keys/webserver.pem")
+    	private_key = file("webserver.pem")
     	host     = aws_instance.webserver.public_ip
 	}
 
